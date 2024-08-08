@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam - JS || Contacts</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header__wrapper flex_box">
+          <a href="./index.html">
+            <img src="./icons/contactslogo.svg" width="60" alt="html logo" />
+          </a>
+          <nav>
+            <ul class="flex_box list_unstyled site-header__list">
+              <li>
+                <a class="link_unstyle site-header__link" href="./index.html">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a class="link_unstyle site-header__link" href="./tasks.html">
+                  Tasks
+                </a>
+              </li>
+              <li>
+                <a class="link_unstyle site-header__link" href="./book.html">
+                  Book
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <h1 class="hero__title">Contact book</h1>
+        <h2 class="visually_hidden">Conytacts</h2>
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__start">
+              <h3 class="hero__subtitle">Add Contact</h3>
+              <form id="js-form" class="hero__form" autocomplete="off">
+                <input
+                  id="js-user-name"
+                  class="hero__input"
+                  type="text"
+                  placeholder="Name"
+                />
+                <input
+                  id="js-relationship"
+                  class="hero__input"
+                  type="text"
+                  list="relationship"
+                  placeholder="Relationship"
+                />
+                <input
+                  id="js-phone"
+                  class="hero__input"
+                  type="tel"
+                  placeholder="Phone(+ not needed)"
+                />
+                <button class="hero__btn" type="submit">Add Contact</button>
+                <datalist id="relationship">
+                  <option value="Family">Family</option>
+                  <option value="Distant relative">Distant relative</option>
+                  <option value="Friend">Friend</option>
+                  <option value="Teacher">Teacher</option>
+                  <option value="Classmate">Classmate</option>
+                  <option value="Colleague">Colleague</option>
+                  <option value="Coursemate">Coursemate</option>
+                  <option value="Acquaintance">Acquaintance</option>
+                  <option value="Neighbor">Neighbor</option>
+                </datalist>
+              </form>
+            </div>
+            <div class="hero__end">
+              <h3 class="hero__subtitle">Contacts</h3>
+              <ol id="js-contacts-list" class="hero__list list_unstyled">
+                <!-- <li class="hero__items">
+                  <a class="hero__phone-link" href="tel:+998770120726">
+                    <div class="hero__info-wrapper">
+                      <h4 class="hero__username">Abdulaziz</h4>
+                      <span class="hero__relationship">Distant relative</span>
+                    </div>
+                    <span class="hero__phone">+998770120726</span>
+                  </a>
+                </li> -->
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <footer class="site_footer">
+      <div class="container">
+        <div class="site-header__wrapper flex_box">
+          <a href="./index.html">
+            <img src="./icons/logo.png" width="60" alt="html logo" />
+          </a>
+          <nav>
+            <ul class="flex_box list_unstyled site-header__list">
+              <li>
+                <a class="link_unstyle site-header__link" href="./index.html">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  class="link_unstyle site-header__link"
+                  href="./contakts.html"
+                >
+                  Contact
+                </a>
+              <li>
+                <a class="link_unstyle site-header__link" href="./tasks.html">
+                  Tasks
+                </a>
+              </li>
+              </li>
+            </ul>
+          </nav>
+          <span class="footer__copy">Copyright © 2024 Uz Contacts</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/contacts.js"></script>
+  </body>
+</html>
